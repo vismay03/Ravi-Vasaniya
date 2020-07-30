@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    background-color: #f1f1f1;
+    padding: 0px;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Create three equal columns that floats next to each other */
+.item {
+    display: none; /* Hide columns by default */
+    margin: 5px;
+}
+
+.desc {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    color: rgb(94, 32, 32);
+    background-color: #faf5f5;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+    
+/* Nav Bar */
+
+li {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* carousel */
+
+.carousel {
+    img {
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        width: 100%;
+        height: 100vh;
+}
+}
+
+
+/* Style the buttons */
+a.gbtn {
+    border: none;
+    outline: none;
+    padding: 16px 16px;
+    margin-bottom:10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+a.gbtn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+a.gbtn.active {
+    background-color: #666;
+    color: white;
+}
+
+.filter-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: 0 auto;
+    img {
+        width: 100%;
+        // width: 400px;
+        object-fit: scale-down;
+        max-height:  400px;
+        height: 100%;
+        transition: all .3s;
+       // height: 300px;
+    }
+}
+
+.filter {
+    width: 100%;
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}

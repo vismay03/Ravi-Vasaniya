@@ -1,0 +1,30 @@
+.nav-item a {
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+/*# sourceMappingURL=about.css.map */
