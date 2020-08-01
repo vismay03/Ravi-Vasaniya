@@ -17,7 +17,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
 <!-- JavaScript -->
@@ -30,19 +30,19 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body class="white">
-<nav class="navbar navbar-expand-lg navbar-light white py-3">
+<nav class="navbar navbar-expand-lg navbar-light white py-3 animated fadeInDown delay-1s" >
 
     <!-- Navbar brand -->
-    <a class="navbar-brand ml-5 animated tada delay-1s" href="#">
+    <a class="navbar-brand ml-5 animated tada delay-2s" href="index.html">
         <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
     </a>
 
     <!-- Collapse button -->
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fas fa-bars fa-1x"></i></span></button>
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fa fa-bars"></i></span></button>
 
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse ml-0 my-lg-0 ml-auto" id="navbarSupportedContent">
@@ -50,19 +50,19 @@
         <!-- Links -->
         <ul class="navbar-nav ml-auto mr-5">
         <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link waves-effect waves-light" href="home.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="#gallery">Gallery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="#">Showcase</a>
+            <a class="nav-link waves-effect waves-light" href="hourlybase.html">Hourly Base</a>
         </li>
         <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="about.html">About Us</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="#">Contact</a>
+            <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
         </li>
         </ul>
         <!-- Links -->
@@ -73,51 +73,38 @@
     </nav>
     <!--/.Navbar-->
         <!--Carousel Wrapper-->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carousel" class="carousel slide carousel-fade animated fadeInLeft delay-3s" data-ride="carousel" data-aos="zoom-in-up">
         <!--Indicators-->
         <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <!--/.Indicators-->
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
             <div class="view">
-            <img class="d-block w-100 animated zoomIn" src="images/Home page photos/img1.jpg"
-                alt="First slide">
+            <img class="d-block w-100 animated zoomIn" src="images/wedding/IMG_0266-w (2).jpg" loading="lazy" alt="First slide">
             <div class="mask rgba-black-light"></div>
             </div>
             <div class="carousel-caption">
-            <h3 class="h3-responsive animated slideInDown" >Light mask</h3>
-            <p class="animated slideInUp">First text</p>
+            <h3 class="h3-responsive animated slideInDown mb-4" style="font-size: 2.1em;font-family: 'Poppins', sans-serif;" ><q>Its not a profession its a passion</q></h3>
+            <!-- <p class="animated slideInUp">First text</p> -->
             </div>
         </div>
         <div class="carousel-item">
             <!--Mask color-->
             <div class="view">
-            <img class="d-block w-100 animated zoomIn" src="images/Home page photos/img2.jpg"
+            <img class="d-block w-100 animated zoomIn" src="images/fashion/A75I3163-1 (8).jpg" loading="lazy"
                 alt="Second slide">
-            <div class="mask rgba-black-strong"></div>
+            <div class="mask rgba-black-light"></div>
             </div>
             <div class="carousel-caption">
-            <h3 class="h3-responsive animated slideInDown">Strong mask</h3>
-            <p class="animated slideInUp">Secondary text</p>
+            <h3 class="h3-responsive animated slideInDown mb-4" style="font-size: 2.1em;font-family: 'Poppins', sans-serif;" ><q>Its all about passion.</h3>
+        
             </div>
         </div>
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-            <img class="d-block w-100 animated zoomIn" src="images/Home page photos/img3.jpg"
-                alt="Third slide">
-            <div class="mask rgba-black-slight"></div>
-            </div>
-            <div class="carousel-caption">
-            <h3 class="h3-responsive animated slideInDown">Slight mask</h3>
-            <p class="animated slideInUp">Third text</p>
-            </div>
-        </div>
+    
         </div>
         <!--/.Slides-->
         <!--Controls-->
@@ -133,162 +120,170 @@
     </div>
     <!--/.Carousel Wrapper-->
 
-    <div class="filter filter-fillgaps" id="gallery">
+    <div class="filter filter-fillgaps" data-aos="fade-up-right" id="gallery">
         
-        <h2 class="text-center font-weight-bold my-4" style="font-family: 'Lato', sans-serif;" >Gallery</h2>
+        <h2 class="text-center font-weight-bold mt-4" style="font-family: 'Lato', sans-serif;" >Showcase</h2>
     
-        <div class="filter-nav d-flex flex-wrap justify-content-center" style="font-family: 'Poppins', sans-serif;" >
-        <a class="gbtn rgba-white-slight " onclick="filterSelection('all')">ALL</a>
-        <a class="gbtn rgba-white-slight" onclick="filterSelection('fashion')">FASHION</a>
-        <a class="gbtn rgba-white-slight" onclick="filterSelection('wedding')">WEDDING</a>
-        <a class="gbtn rgba-white-slight" onclick="filterSelection('couple')">COUPLE</a>
-        <a class="gbtn rgba-white-slight" onclick="filterSelection('maternity')">MATERNITY</a>
-        <a class="gbtn rgba-white-slight" onclick="filterSelection('kids')">KIDS</a>
+        <div id="filter-nav" class="py-4 filter-nav d-flex flex-wrap justify-content-center" style="font-family: 'Poppins', sans-serif;" >
+        <a class="rgba-white-slight h" onclick="filterSelection('all')">ALL</a>
+        <a class="rgba-white-slight" onclick="filterSelection('fashion')">FASHION</a>
+        <a class="rgba-white-slight" onclick="filterSelection('wedding')">WEDDING</a>
+        <a class="rgba-white-slight" onclick="filterSelection('couple')">COUPLE</a>
+        <a class="rgba-white-slight" onclick="filterSelection('maternity')">MATERNITY</a>
+        <a class="rgba-white-slight" onclick="filterSelection('kids')">KIDS</a>
     </div>
     <div class="filter-gallery ">
-    <div class="item z-depth-1 my-5 rgba-grey-slight p-3 desc view zoom fashion">
-        <p>Fashion Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
-    </div>
-    <div class="desc z-depth-1 my-5 p-3 item view zoom wedding " >    
-        <p>Wedding Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
-    </div>
-    <div class="desc z-depth-1 my-5 p-3 item view zoom couple" >    
-        <p>Couple Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
-    </div>
-    <div class="desc z-depth-1 my-5 p-3 item view zoom maternity" >    
-        <p>Maternity Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
-   </div>
-    <div class="desc z-depth-1 my-5 p-3 item view zoom kids">    
-        <p>Kids Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
-    </div>
-    <div class="view overlay zoom item flex-center kids animated slideInUp">
-        <img class="" src="images/KIDS/IMG_0279-k (1).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/COUPLE/IMG_6959-c (1).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (7).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/couple/IMG_6959-c (2).jpg" alt="image">
-    </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (1).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/couple/IMG_6959-c (5).jpg" alt="image">
-    </div>
-    <div class="item kids view overlay zoom animated slideInUp">
-        <img src="images/KIDS/IMG_0279-k (2).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img  src="images/couple/IMG_6959-c (6).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img  src="images/fashion/A75I3163-1 (4).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/couple/IMG_6959-c (7).jpg"alt="image">
-    </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (8).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (3).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (2).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (5).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (6).jpg" alt="image">
-    </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/couple/IMG_6959-c (4).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img class="zoom" src="images/fashion/A75I3163-1 (8).jpg" alt="image">
-    </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (3).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (9).jpg" alt="image">
-    </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (2).jpg" alt="image">
-    </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (4).jpg" alt="image">
-    </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-            <img  src="images/fashion/A75I3163-f.jpg" alt="image">
+    <div id="desc" class="w-100 py-3 justify-content-center">
+        <div class="item desc view zoom fashion">
+            <p>Fashion Photography enhances and highlights different sets of clothing and fashion products in various exciting ways. A professional fashion photographer grinds against the grain and look at fashion as no other can imagine before them. Photography can be taken for any purpose and use, whether it is a shoot for magazine or promotion of various products. </p>
         </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (6).jpg" alt="image">
+        <div class="item desc view zoom wedding" >    
+            <p>Wedding moments are precious so for that, u need the best person who understands your expectations and makes photographs in an artistic manner. Capture every emotion, feelings, and Expression. </p>
+        </div>
+        <div class="item desc view zoom couple" >    
+            <p>So you are getting married !! That’s the great news!! You need an exceptional romantic pre-wedding photoshoot! Photos, which display your own romantic story. Pre-wedding couple photography is an inseparable part of wedding photography and as essential as the wedding photos.
+                Constantly gaining popularity in India -Pre-wedding photography your one informal day before the big day.
+                In Indian weddings, you would definitely choose to be dressed up in traditional dresses or heavy outfits. This may hectic for you and you can miss your personality as a couple. Therefore, you can choose a casual attire for your pre wedding shoot. This will help you to shine out as a couple and bring the beauty of your album.
+            </p>
+            <p>Just give us a call to book your pre wedding photo shoot. Trust us this is the aspect that needs to be captured. To see the special you around your partner.
+                    This would be money well spent.
+            </p>
+        </div>
+        <div class="item desc view zoom maternity" >    
+            <p>Expecting a bundle of joy soon? Celebrate this miracle of life growing inside you by getting a maternity photography session with the best maternity photographers in Morbi.</p>
+            <p>The best time to get your maternity photoshoot done is in the 8th Month of your pregnancy. The bump is properly visible at the time and moving about is not as uncomfortable as would be in the 9th month. Also, it’s important to coordinate your outfit with your spouse and kids for best results.</p>
+        </div>
+        <div class="item desc view zoom kids">    
+            <p>As a Child Photographer, he try to capture every tiny detail in a kids photoshoot. After all, they are this little only for so long. , Shooting outdoors with children is such a joy. They are in their element, running about, exploring, absorbing and feeling joyful. Their natural reactions come out beautifully on film. </p>
+        </div>
     </div>
-    <div class="item maternity view overlay zoom animated slideInUp">
-        <img src="images/maternity/IMG_2072-m (1).jpg" alt="image">
+    <div class="view overlay zoom item kids ">
+        <img class="" src="images/KIDS/IMG_0279-k (1).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item maternity view overlay zoom animated slideInUp">
-        <img src="images/maternity/IMG_2072-m (3).jpg" alt="image">
+    <div class="item couple view overlay zoom ">
+        <img src="images/COUPLE/IMG_6959-c (1).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item maternity view overlay zoom animated slideInUp">
-        <img src="images/maternity/IMG_2072-m (5).jpg" alt="image">
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (7).jpg" loading="lazy" alt="image">
+    </div>    <div class="item couple view overlay zoom ">
+        <img src="images/couple/IMG_6959-c (2).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (7).jpg" alt="image">
+    <div class="item wedding view overlay zoom ">
+        <img src="images/wedding/IMG_0266-w (1).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item maternity view overlay zoom animated slideInUp">
-        <img src="images/maternity/IMG_2072-m (2).jpg" alt="image">
+    <div class="item couple view overlay zoom ">
+        <img src="images/couple/IMG_6959-c (5).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item fashion view overlay zoom animated slideInUp">
-        <img src="images/fashion/A75I3163-1 (10).jpg" alt="image">
+    <div class="item kids view overlay zoom ">
+        <img src="images/KIDS/IMG_0279-k (2).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item couple view overlay zoom animated slideInUp">
-        <img src="images/couple/IMG_6959-c (9).jpg" alt="image">
+    <div class="item couple view overlay zoom ">
+        <img  src="images/couple/IMG_6959-c (6).jpg" loading="lazy" alt="image">
     </div>
-    <div class="item wedding view overlay zoom animated slideInUp">
-        <img src="images/wedding/IMG_0266-w (5).jpg" alt="image">
+    <div class="item fashion view overlay zoom ">
+        <img  src="images/fashion/A75I3163-1 (4).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item couple view overlay zoom ">
+        <img src="images/couple/IMG_6959-c (7).jpg"loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom ">
+        <img src="images/wedding/IMG_0266-w (8).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (3).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (2).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (5).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (6).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item couple view overlay zoom ">
+        <img src="images/couple/IMG_6959-c (4).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (8).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom ">
+        <img src="images/wedding/IMG_0266-w (3).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom ">
+        <img src="images/fashion/A75I3163-1 (9).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom ">
+        <img src="images/wedding/IMG_0266-w (2).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom ">
+        <img src="images/wedding/IMG_0266-w (4).jpg" loading="lazy" alt="image">
+    </div>
+    
+    <div class="item wedding view overlay zoom">
+            <img  src="images/fashion/A75I3163-f.jpg" loading="lazy" alt="image">
+        </div>
+    <div class="item wedding view overlay zoom">
+        <img src="images/wedding/IMG_0266-w (6).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item maternity view overlay zoom">
+        <img src="images/maternity/IMG_2072-m (3).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item maternity view overlay zoom">
+        <img src="images/maternity/IMG_2072-m (5).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom">
+        <img src="images/wedding/IMG_0266-w (7).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item maternity view overlay zoom">
+        <img src="images/maternity/IMG_2072-m (2).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item fashion view overlay zoom">
+        <img src="images/fashion/A75I3163-1 (10).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item maternity view overlay zoom">
+        <img src="images/maternity/IMG_2072-m (1).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item couple view overlay zoom">
+        <img src="images/couple/IMG_6959-c (9).jpg" loading="lazy" alt="image">
+    </div>
+    <div class="item wedding view overlay zoom">
+        <img src="images/wedding/IMG_0266-w (5).jpg" loading="lazy" alt="image">
     </div>
     </div>
 </div>
 
 
-<footer style="margin-top: 100px;">
-        <section class="d-flex justify-content-around flex-wrap py-3">
-            <div>
-                <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
-            </div>
-            <ul class="d-flex nav">
-                <li class="nav-item">
-                    <a class="text-body nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-body nav-link waves-effect waves-light" href="#">Showcase</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-body nav-link waves-effect waves-light" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-body nav-link waves-effect waves-light" href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-                <i class="fa fa-facebook mx-1" aria-hidden="true"></i>
-                <i class="fa fa-instagram mx-3" aria-hidden="true"></i>
-                <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i>
-            </div>
+<footer class="mt-4" data-aos="zoom-in-left" data-os-anchor-placement="center-center" data-os-easing="linear" data-aos-duration='1000'>
+    <section class="d-flex w-100 justify-content-around flex-wrap py-3 ">
+        <div class="mt-3" >
+            <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
+        </div>
+        <ul class="d-flex nav mt-3">
+            <li class="text-body nav-item">
+                <a class="text-body nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="text-body nav-item">
+                <a class="text-body nav-link waves-effect waves-light" href="hourlybase.html">Hourly base</a>
+            </li>
+            <li class="text-body nav-item">
+                <a class="text-body nav-link waves-effect waves-light" href="about.html">About</a>
+            </li>
+            <li class="text-body nav-item">
+                <a class="text-body nav-link waves-effect waves-light" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class=" d-flex mt-4">
+        <a style="color: black;" href="https://m.facebook.com/ravivasaniyaphotography"> <i class="fa fa-facebook mx-1" aria-hidden="true"></i></a>
+        <a style="color: black;" href="https://www.instagram.com/ravi_vasaniya_photography"><i class="fa fa-instagram mx-3" aria-hidden="true"></i></a>
+        <a style="color: black;" href="https://www.youtube.com/ravivasaniyaofficial">   <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i></a>
+        </div>
+    </section>
 
-        </section>
-
-        <p class="d-flex justify-content-center pt-3 pb-2" >
-            <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
-        </p>
-    </footer>   
+    <p class="small d-flex justify-content-center pt-3" >
+        <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
+    </p>
+</footer>   
 <script src="js/gallary.js"></script>
 </body>
 </html>

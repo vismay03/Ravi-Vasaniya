@@ -1,23 +1,23 @@
+    
+    AOS.init();
+    
     filterSelection("all");
     function filterSelection(c) {
-    var x, i, desc;
+    var x, i;
     x = document.getElementsByClassName("item");
-    desc = document.getElementsByClassName("desc");
-    
+    var desc = document.getElementById('desc');
     if (c == "all") { 
-        // for(i=0; i<desc.length ; i++){
-        //     desc[i].style.display = "none";
-        // }
-        console.log('all');
         
+        console.log('all');
+        desc.style.display= "none";
+        desc.style.flexDirection = "column";
+        desc.style.justifyContent = "center";
         c="";
     }
-    // else {
-    //     for(i=0; i<desc.length ; i++){
-    //         desc[i].style.display = "block";
-    //     }
-    
-    // }
+    else {
+        desc.style.display= "flex";
+    }
+
     for (i = 0; i < x.length; i++) {
     
         RemoveClass(x[i], "show");
@@ -38,15 +38,23 @@
     function RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
-    //document.write(arr1+ "<br>");
+    
     arr2 = name.split(" ");
-    //document.write(arr2);
     for (i = 0; i < arr2.length; i++) {
-        //document.write(arr2[i]);
+    
         while (arr1.indexOf(arr2[i]) > -1) {
-       // document.write( arr1.indexOf(arr2[i]) );
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
         }
     }
     element.className = arr1.join(" ");
     }
+
+    var btnContainer = document.getElementById("filter-nav");
+var btns = btnContainer.getElementsByTagName("a");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName(" h");
+    current[0].className = current[0].className.replace(" h", " ");
+    this.className += " h";
+});
+}

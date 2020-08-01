@@ -1,18 +1,9 @@
-section {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.nav-item a {
-    font-family: 'Poppins', sans-serif;
-}
-
 li {
     margin-bottom: 10px;
 }
 
 .nav-link {
-   
+    display: inline-block;
     color: #000;
     text-decoration: none;
 }
@@ -23,6 +14,7 @@ li {
     width: 0;
     height: 2px;
     background: #000;
+    -webkit-transition: width .3s;
     transition: width .3s;
 }
 
@@ -34,7 +26,6 @@ li {
     -ms-transition: width .3s;
     -o-transition: width .3s;
 }
-
 
 @media screen and (max-width:500px) {
     footer {

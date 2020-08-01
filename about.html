@@ -14,7 +14,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/about.css">
 
 <!-- JavaScript -->
@@ -27,18 +27,19 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
+<!-- On scroll animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light white py-3">
+    <nav class="navbar navbar-expand-lg navbar-light white py-3 animated fadeInDown delay-1s">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-            <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
+        <a class="navbar-brand animated tada delay-2s" href="#">
+            <img style="width: 140px; height: 40px; " src="images/Ravi-Vasaniya.png" />
         </a>
     
         <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fas fa-bars fa-1x"></i></span></button>
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fa fa-bars"></i></span></button>
     
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse ml-0 my-lg-0 ml-auto" id="navbarSupportedContent">
@@ -49,13 +50,13 @@
                 <a class="nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="#">Showcase</a>
+                <a class="nav-link waves-effect waves-light" href="hourlybase.html">Hourly base</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link waves-effect waves-light" href="about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="#">Contact</a>
+                <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
             </li>
             </ul>
             <!-- Links -->
@@ -65,70 +66,54 @@
     
         </nav>
 
-        <h3 class="text-center text-black" style="margin: 2em 0;font-family: 'Poppins', sans-serif;"  >About</h3>
+        <h3 class="text-center text-black" style="padding: 2em 0;font-family: 'Lato', sans-serif;" >About</h3>
 
-        <section class="d-flex justify-content-around" style="margin-top: 0em;">
+        <section class="mt-3 w-75 mx-auto d-flex justify-content-around flex-wrap" style="margin-top: 0em;">
 
-            <img style="width: 30%; height: 550px;" src="../images/e2da91c0-0736-4367-b0e3-1b597acd77c3.jpg" />
-            <div class="about d-flex justify-content-center align-items-center" style="width: 30%; height: 600px;">
+            <img style="width: 400px; height: 500px;" class="animated fadeInLeft delay-3s" src="../images/e2da91c0-0736-4367-b0e3-1b597acd77c3.jpg" />
+            <div class="about mt-3 d-flex justify-content-center align-items-center animated fadeInRight delay-3s" style="width: 400px;">
                 <div class="">
-                    <h5 style="font-size: 2.25em; font-family: 'Great Vibes', cursive;" >Ravi Vasaniya</h5>
+                    <h5 class="text-center" style="font-size: 2.25em; font-family: 'Great Vibes', cursive;" >Ravi Vasaniya</h5>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, mollitia. Excepturi, numquam? Modi non deleniti itaque beatae aut corrupti, optio officia laboriosam magnam aspernatur, nihil fugit voluptatum labore doloremque eum.Aspernatur quia earum dolores placeat aperiam consequuntur laborum animi illum maiores tempore, vitae reprehenderit omnis possimus! Quibusdam veniam voluptatibus aut necessitatibus fugiat minima ipsa odit assumenda in? Pariatur, nobis eius!
-                    </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima similique autem accusantium! Exercitationem laudantium quae perspiciatis, quos voluptatibus ea sint assumenda beatae dolore minima. Placeat ea illum autem laborum voluptates.
-                    </p>
+                        Ravi Vasaniya is passionate photographer currently based in Morbi and Rajkot,India. A software engineer by education, his father gave him first camera when he was 20, which started out as hobby and have grown into a lifelong love affair with photography, 
+                        he took up photography in 2016 while work assignment with college campus, Ravi Vasaniya is one of best and youngest Natural Light and Lifestyle  photogr apher based in Morbi, He is specializes in Portraits, Maternity & Wedding photography. </p>
                 </div>
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-<footer style="margin-top: 100px;">
-    <section class="d-flex justify-content-around py-3">
-        <div>
-            <img style="width: 140px; height: 45px;" src="images/Ravi-Vasaniya.png" />
-        </div>
-        <ul class="d-flex nav">
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="#">Showcase</a>
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="#">Contact</a>
-            </li>
-        </ul>
-        <div class="d-flex">
-            <i class="fa fa-facebook mx-1" aria-hidden="true"></i>
-            <i class="fa fa-instagram mx-1" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i>
-        </div>
-
-    </section>
-
-    <p class="d-flex justify-content-center pt-3 pb-2" >
-        <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
-    </p>
-</footer>
+        <footer class="mt-3" data-aos="zoom-in-left" data-os-anchor-placement="center-center" data-os-easing="linear" data-aos-duration='1000' >
+            <section class="d-flex justify-content-around flex-wrap py-3">
+                <div class="mt-3" >
+                    <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
+                </div>
+                <ul class="d-flex nav mt-3">
+                    <li class="nav-item">
+                        <a class="text-body nav-link waves-effect waves-light" href="home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-body nav-link waves-effect waves-light" href="hourlybase.html">Hourly base</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-body nav-link waves-effect waves-light" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-body nav-link waves-effect waves-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex mt-4">
+                    <a style="color: black;" href="https://m.facebook.com/ravivasaniyaphotography"> <i class="fa fa-facebook mx-1" aria-hidden="true"></i></a>
+                    <a style="color: black;" href="https://www.instagram.com/ravi_vasaniya_photography"><i class="fa fa-instagram mx-3" aria-hidden="true"></i></a>
+                    <a style="color: black;" href="https://www.youtube.com/ravivasaniyaofficial">   <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i></a>
+                </div>
+        
+            </section>
+        
+            <p class="small d-flex justify-content-center pt-3" >
+                <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
+            </p>
+        </footer>   
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

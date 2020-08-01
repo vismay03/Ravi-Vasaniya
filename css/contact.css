@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-item a {
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -ms-transition: width .3s;
+  -o-transition: width .3s;
+}
+
+@media screen and (max-width: 500px) {
+  footer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

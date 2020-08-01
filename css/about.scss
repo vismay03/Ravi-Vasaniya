@@ -26,3 +26,15 @@ li {
     width: 100%;
     transition: width .3s;
 }
+@media screen and (max-width:500px) {
+    footer {
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    
+
+}
