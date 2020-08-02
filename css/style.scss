@@ -7,12 +7,10 @@ html,body {
     margin: 0;
 }
 
-
 .item {
     max-width: 0%;
     opacity: 0;
     transition: all .2s ease-in;
-   // margin: 5px;
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
     -ms-transition: all .2s ease-in;
@@ -27,7 +25,6 @@ html,body {
     max-height: 100%;
     box-sizing: border-box;
     height: 100%;
-
 }
 
 #desc { 
@@ -43,7 +40,12 @@ html,body {
 }
 
 }
+/* Bars */
 
+.bar {
+    width: 5px;
+    height: 2px;
+}
 
 /* Nav Bar */
 
@@ -55,6 +57,21 @@ li {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    a::after{
+        content: 'new';
+        width: 5px;
+        padding: 3px;
+        color: black;
+    }
+
+
+}
+
+a .label {
+    position: absolute;
+    top: -5px;
+    left: 70px;
 }
 
 .nav-link::after {
@@ -85,12 +102,12 @@ li {
         -moz-transition: all 1s;
         -ms-transition: all 1s;
         -o-transition: all 1s;
-        width: 100%;
-        height: 600px;
+        max-width: 100%;
+        height: 700px;
 }
 }
 
-
+// Gallery
 
 .filter-gallery {
     width: 100%;
@@ -141,8 +158,6 @@ li {
     }
 }
 
-
-
 @media screen and (max-width:500px) {
     footer {
         .nav {
@@ -152,13 +167,8 @@ li {
         }
     }
     .carousel {
-    
         img {
             height: 500px;
+        }
     }
-    }
-
-    .desc {
-    }
-    
 }

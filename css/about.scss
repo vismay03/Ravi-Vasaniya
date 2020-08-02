@@ -1,16 +1,34 @@
-.nav-item a {
-    font-family: 'Poppins', sans-serif;
-}
+
 
 
 li {
     margin-bottom: 10px;
 }
 
+/* menu */
+.bar {
+    width: 18px;
+    height: 3px;
+    margin-top: 3px;
+    background-color: #000;
+}
+
+.bar2 {
+    // width: 10px;
+    // margin-left: 7px;
+}
+
 .nav-link {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+a .label {
+    position: absolute;
+    top: -4px;
+    left: 70px;
 }
 
 .nav-link::after {
@@ -26,6 +44,7 @@ li {
     width: 100%;
     transition: width .3s;
 }
+
 @media screen and (max-width:500px) {
     footer {
         .nav {
@@ -35,6 +54,6 @@ li {
         }
     }
 
-    
+
 
 }

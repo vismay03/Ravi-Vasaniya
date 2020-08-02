@@ -8,6 +8,12 @@ li {
     text-decoration: none;
 }
 
+a .label {
+    position: absolute;
+    top: -4px;
+    left: 70px;
+}
+
 .nav-link::after {
     content: '';
     display: block;
@@ -36,3 +42,4 @@ li {
         }
     }
 }
+

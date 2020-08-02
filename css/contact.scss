@@ -3,18 +3,20 @@ section {
     margin: 0 auto;
 }
 
-.nav-item a {
-    font-family: 'Poppins', sans-serif;
-}
-
 li {
     margin-bottom: 10px;
 }
 
 .nav-link {
-   
     color: #000;
     text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+a .label {
+    position: absolute;
+    top: -4px;
+    left: 70px;
 }
 
 .nav-link::after {
@@ -35,6 +37,11 @@ li {
     -o-transition: width .3s;
 }
 
+footer {
+    section {
+        width: auto;
+    }
+}
 
 @media screen and (max-width:500px) {
     footer {
@@ -42,6 +49,7 @@ li {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            
         }
     }
 }

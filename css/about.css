@@ -1,15 +1,26 @@
-.nav-item a {
-  font-family: 'Poppins', sans-serif;
-}
-
 li {
   margin-bottom: 10px;
+}
+
+/* menu */
+.bar {
+  width: 18px;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #000;
 }
 
 .nav-link {
   display: inline-block;
   color: #000;
   text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+a .label {
+  position: absolute;
+  top: -4px;
+  left: 70px;
 }
 
 .nav-link::after {
