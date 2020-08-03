@@ -11,6 +11,7 @@ li {
     color: #000;
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
+    text-transform: uppercase;
 }
 
 .bar {
@@ -21,12 +22,11 @@ li {
 }
 
 
-a .label {
+a.nav-link .label {
     position: absolute;
     top: -4px;
-    left: 70px;
+    left: 87px;
 }
-
 .nav-link::after {
     content: '';
     display: block;
@@ -46,18 +46,20 @@ a .label {
 }
 
 footer {
-    section {
-        width: auto;
+    
+    a.nav-link .label {
+        position: absolute;
+        top: -5px;
+        left: 96px;
     }
 }
 
 @media screen and (max-width:500px) {
     footer {
+        
         .nav {
-            display: flex;
             flex-direction: row;
             justify-content: center;
-            
         }
     }
 }

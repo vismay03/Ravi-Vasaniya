@@ -11,6 +11,7 @@ li {
   color: #000;
   text-decoration: none;
   font-family: 'Mulish', sans-serif;
+  text-transform: uppercase;
 }
 
 .bar {
@@ -20,10 +21,10 @@ li {
   background-color: #000;
 }
 
-a .label {
+a.nav-link .label {
   position: absolute;
   top: -4px;
-  left: 70px;
+  left: 87px;
 }
 
 .nav-link::after {
@@ -45,15 +46,14 @@ a .label {
   -o-transition: width .3s;
 }
 
-footer section {
-  width: auto;
+footer a.nav-link .label {
+  position: absolute;
+  top: -5px;
+  left: 96px;
 }
 
 @media screen and (max-width: 500px) {
   footer .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

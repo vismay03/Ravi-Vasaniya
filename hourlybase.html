@@ -17,8 +17,7 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/hourlybase.css">
-
+  
     <!-- JavaScript -->
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,13 +27,16 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/hourlybase.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light white py-3 animated fadeInDown delay-1s">
+    <nav class="navbar navbar-expand-lg transparent white py-3 animated fadeInDown delay-1s">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand animated tada delay-2s" href="index.html">
+        <a class="navbar-brand" href="index.html">
             <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
         </a>
     
@@ -54,10 +56,10 @@
                 <a class="nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label small blue-gradient px-1 text-white">new</span></a>
+                <a class="nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label text-lowercase small blue-gradient px-1 text-white">new</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="about.html">About</a>
+                <a class="nav-link waves-effect waves-light" href="about.html">About me</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
@@ -70,9 +72,9 @@
     
         </nav>
 
-        <h3 class="text-center text-black" style="margin: 2em 0;font-family: 'Lato', sans-serif;">Hourly based</h3>
+        <h3 class="text-center text-black animated flipInY delay-2s" style="margin: 2em 0;font-family: 'Lato', sans-serif;">Hourly based</h3>
 
-        <div id="carouselExampleIndicators" class="carousel slide animated zoomIn delay-2s" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide animated zoomIn delay-1s" data-ride="carousel">
             <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -101,29 +103,29 @@
                 <img class="d-block w-100" src="images/hourlybase/6.png" alt="Third slide">
                 </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="width:70px; height:80px;"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true" style="width:70px; height:80px;"></span>
             <span class="sr-only">Next</span>
         </a>
         </div>
-        <footer class="mt-3" data-os-anchor-placement="center-center" data-os-easing="linear" data-aos-duration='1000'>
-            <section class="d-flex justify-content-around flex-wrap py-3">
+        <footer class="mt-3" data-aos="zoom-in-left" data-aos-easing="linear" >
+            <section class="d-flex w-100 justify-content-around flex-wrap py-3">
                 <div class="mt-3" >
                     <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
                 </div>
-                <ul class="d-flex nav mt-3">
+                <ul class="d-flex nav mt-5">
                     <li class="nav-item">
-                        <a class="text-body nav-link waves-effect waves-light" href="home">Home <span class="sr-only">(current)</span></a>
+                        <a class="text-body nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-body nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label small blue-gradient px-1 text-white">new</span></a>
+                        <a class="text-body nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label small text-lowercase blue-gradient px-1 text-white">new</span></a>
                     </li>   
                     <li class="nav-item">
-                        <a class="text-body nav-link waves-effect waves-light" href="about.html">About</a>  
+                        <a class="text-body nav-link waves-effect waves-light" href="about.html">About me</a>  
                     </li>
                     <li class="nav-item">
                         <a class="text-body nav-link waves-effect waves-light" href="contact.html">Contact</a>

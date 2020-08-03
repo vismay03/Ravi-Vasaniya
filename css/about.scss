@@ -20,12 +20,21 @@ li {
     color: #000;
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
+    text-transform: uppercase;
 }
 
-a .label {
+a.nav-link .label {
     position: absolute;
-    top: -4px;
-    left: 70px;
+    top: -5px;
+    left: 87px;
+}
+
+footer {
+    a.nav-link .label {
+        position: absolute;
+        top: -5px;
+        left: 96px;
+    }
 }
 
 .nav-link::after {

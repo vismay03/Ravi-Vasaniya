@@ -16,8 +16,31 @@ html, body {
   -moz-transition: all .2s ease-in;
   -ms-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
-  padding: 0;
   height: 0;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand h2 {
+  font-family: 'Red Rose', cursive;
+  margin: 0;
+}
+
+.navbar-brand p {
+  margin-top: -9px;
+  font-size: 10px;
+  color: #fff;
+  font-family: 'Lexend Zetta', sans-serif;
+}
+
+.navbar-brand p span {
+  width: 5px;
+  height: 5px;
+  margin: 0 2px 1px;
+  background-color: #fff;
+  display: inline-block;
 }
 
 .show {
@@ -27,6 +50,7 @@ html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
+  margin: 0 auto;
 }
 
 #desc {
@@ -46,10 +70,18 @@ html, body {
   width: 18px;
   height: 3px;
   margin-top: 3px;
-  background-color: #000;
+  background-color: white;
 }
 
 /* Nav Bar */
+nav {
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+}
+
 li {
   margin-bottom: 10px;
 }
@@ -59,6 +91,7 @@ li {
   color: #000;
   text-decoration: none;
   font-family: 'Mulish', sans-serif;
+  text-transform: uppercase;
 }
 
 .nav-link a::after {
@@ -68,10 +101,10 @@ li {
   color: black;
 }
 
-a .label {
+a.nav-link .label {
   position: absolute;
   top: -5px;
-  left: 70px;
+  left: 80px;
 }
 
 .nav-link::after {
@@ -79,9 +112,25 @@ a .label {
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background-color: #f9faf5;
   -webkit-transition: width .3s;
   transition: width .3s;
+}
+
+footer .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+footer a.nav-link .label {
+  position: absolute;
+  top: -5px;
+  left: 87px;
 }
 
 .nav-link:hover::after {
@@ -109,31 +158,33 @@ a .label {
 }
 
 .filter-gallery {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 .filter-gallery img {
   max-width: 100%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  max-height: 400px;
+  max-height: 450px;
   margin: 5px;
 }
 
 .filter {
   width: 100%;
-}
-
-.filter .filter-nav {
-  padding: 4px;
 }
 
 .filter a {
@@ -178,6 +229,15 @@ a .label {
   }
   .carousel img {
     height: 500px;
+  }
+  .carousel h3 {
+    font-size: 1.5em;
+  }
+  .filter-gallery {
+    width: 95%;
+  }
+  .filter-gallery img {
+    max-height: 500%;
   }
 }
 /*# sourceMappingURL=style.css.map */

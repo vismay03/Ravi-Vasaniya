@@ -6,12 +6,15 @@ li {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-a .label {
+
+
+a.nav-link .label {
     position: absolute;
     top: -4px;
-    left: 70px;
+    left: 87px;
 }
 
 .bar {
@@ -21,6 +24,13 @@ a .label {
     background-color: #000;
 }
 
+footer {
+    a.nav-link .label {
+        position: absolute;
+        top: -5px;
+        left: 96px;
+    }
+}
 
 .nav-link::after {
     content: '';
