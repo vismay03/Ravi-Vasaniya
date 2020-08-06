@@ -78,7 +78,7 @@ nav {
   width: 80%;
   position: absolute;
   z-index: 1;
-  top: 10%;
+  top: 4%;
   left: 10%;
 }
 
@@ -237,7 +237,18 @@ footer a.nav-link .label {
     width: 95%;
   }
   .filter-gallery img {
-    max-height: 500%;
+    max-height: 500px;
+  }
+  nav {
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    left: 5%;
+  }
+  nav li a {
+    margin-left: 70px;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */
