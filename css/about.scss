@@ -13,7 +13,9 @@ li {
     background-color: #000;
 }
 
-
+.navbar{
+    box-shadow: 0 0 0 ;
+}
 
 .nav-link {
     display: inline-block;
@@ -25,7 +27,7 @@ li {
 
 a.nav-link .label {
     position: absolute;
-    top: -5px;
+    top: -6px;
     left: 87px;
 }
 

@@ -9,9 +9,14 @@ li {
   text-transform: uppercase;
 }
 
+.navbar {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
 a.nav-link .label {
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: 87px;
 }
 

@@ -3,8 +3,18 @@ section {
   margin: 0 auto;
 }
 
+.navbar-brand img {
+  width: 220px;
+  height: 150px;
+}
+
 li {
   margin-bottom: 10px;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
 }
 
 .nav-link {
@@ -23,7 +33,7 @@ li {
 
 a.nav-link .label {
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: 87px;
 }
 
@@ -61,6 +71,10 @@ footer a.nav-link .label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .navbar-brand img {
+    width: 160px;
+    height: 100px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

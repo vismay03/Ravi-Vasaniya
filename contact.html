@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- Bootstrap core CSS -->
-   <!-- CSS -->
+    <!-- CSS -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Fonts -->
@@ -40,7 +40,7 @@
 
         <!-- Navbar brand -->
         <a class="navbar-brand"  href="index.html">
-            <img style="width: 140px; height: 40px;"  src="images/Ravi-Vasaniya.png" />
+            <img src="images/ravi2.png" />
         </a>
     
         <!-- Collapse button -->
@@ -90,25 +90,39 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5 animated zoomIn delay-1s">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxVTwf1BOt8UvX0Xg6Ek1tPaIZjNGkUuGEanankuW7oOUBIF2vO/exec" method="POST">
 
                 <!--Grid row-->
                 <div class="row">
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+                            <label for="mobile" class="">Your name</label>
+                            <span class="name-empty" style="display:none">name can't be empty</span>
                         </div>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="tel" id="mobile" name="mobile" class="form-control">
+                            <label for="tel" class="">Your Mobile Number</label>
+                            <span class="mobile-empty" style="display:none">mobile number can't be empty</span>
+                            <span class="mobile-invalid" style="display:none">Must be a valid mobile number</span>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
                         <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control">
                             <label for="email" class="">Your email</label>
+                            <span class="email-invalid" style="display:none">Must be a valid email address</span>
+                            <span class="email-empty" style="display:none">email can't be empty</span>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -117,14 +131,14 @@
                 <!--Grid row-->
 
                 <!--Grid row-->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <input type="text" id="subject" name="subject" class="form-control">
                             <label for="subject" class="">Subject</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--Grid row-->
 
                 <!--Grid row-->
@@ -136,34 +150,45 @@
                         <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Your message</label>
+                            <span class="message-empty" style="display:none">message can't be empty</span>
                         </div>
 
                     </div>
                 </div>
                 <!--Grid row-->
+                <button class="btn btn-primary">
+                    Send</button>
+
+                <div style="display:none;" class="thankyou_message mt-5 bg-primary text-white p-3">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                    </h2>
+                </div>
+
 
             </form>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
+
+            <!-- <div class="text-center text-md-left"> -->
+        
+            <!-- </div> -->
             <div class="status"></div>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 mt-4 text-center">
             <ul class="list-unstyled mb-0">
-                <li  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000" data-aos-duration='2000' ><i class="fa fa-map-marker fa-2x"></i>
+                <li  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration='1000' ><i class="fa fa-map-marker fa-2x"></i>
                     <p>Morbi</p>
                 </li>
 
-                <li data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-delay="1000" data-aos-duration='2000' ><i class="fa fa-phone mt-4 fa-2x"></i>
+                <li data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration='1000' ><i class="fa fa-phone mt-4 fa-2x"></i>
                     <p>+91 96628 18380</p>
                 </li>
 
-                <li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000" data-aos-duration='2000'><i class="fa fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
+                <li data-aos="flip-left" data-aos-easing="ease-out-cubic" ata-aos-duration='1000'><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>ravivasaniya@hotstar.com</p>
                 </li>
             </ul>
         </div>
@@ -172,13 +197,16 @@
     </div>
 
 </section>
+
+<!-- Footer -->
+
 <!--Section: Contact v.2-->
 <footer class="mt-5" data-aos="zoom-in-left" data-aos-easing="linear" >
     <section class="d-flex w-100 justify-content-around flex-wrap py-3">
         <div class="mt-3" >
             <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
         </div>
-        <ul class="d-flex nav mt-5">
+        <ul class="d-flex nav mt-3">
             <li class="nav-item">
                 <a class="text-body nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -192,7 +220,7 @@
                 <a class="text-body nav-link waves-effect waves-light" href="contact.html">Contact</a>
             </li>
         </ul>
-        <div class="d-flex mt-3">
+        <div class="d-flex mt-4">
             <a style="color: black;" href="https://m.facebook.com/ravivasaniyaphotography"> <i class="fa fa-facebook mx-1" aria-hidden="true"></i></a>
             <a style="color: black;" href="https://www.instagram.com/ravi_vasaniya_photography"><i class="fa fa-instagram mx-3" aria-hidden="true"></i></a>
             <a style="color: black;" href="https://www.youtube.com/ravivasaniyaofficial">   <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i></a>            
@@ -204,8 +232,12 @@
         <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
     </p>
 </footer>   
-<script>
-    AOS.init();
+<!-- <script>
+
+</script>  -->
+<!-- <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> -->
+<script data-cfasync="false" type="text/javascript"
+    src="form-submission-handler.js">
 </script>
 </body>
 </html>
