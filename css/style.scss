@@ -5,7 +5,7 @@
 html,body {
     padding: 0px;
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .item {
@@ -85,6 +85,11 @@ nav {
     button:focus {
         outline: 0;
         
+    }
+    .navbar-brand {
+        img {
+            width: 150px;height:60px;
+        }
     }
 }
 
@@ -215,7 +220,7 @@ footer {
     }
 }
 
-@media screen and (max-width:590px) {
+@media screen and (max-width:700px) {
     footer {
         .nav {
             display: flex;
@@ -244,8 +249,11 @@ footer {
         top: 0%;
         left: 5%;
         .navbar-brand {
-            width: 140px;height:50px;
+            img {
+            width: 130px;height:50px;
+            }
         }
+    
         li {
             padding: 0;
             a {
