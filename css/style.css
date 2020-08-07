@@ -247,6 +247,10 @@ footer a.nav-link .label {
     top: 0%;
     left: 5%;
   }
+  nav .navbar-brand {
+    width: 140px;
+    height: 50px;
+  }
   nav li {
     padding: 0;
   }
