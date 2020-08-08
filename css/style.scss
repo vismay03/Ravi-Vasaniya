@@ -5,7 +5,7 @@
 html,body {
     padding: 0px;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .item {
@@ -30,7 +30,6 @@ html,body {
         margin-top: -9px;
         font-size: 10px;
         color: #fff;
-        // letter-spacing: 2px;
         font-family: 'Lexend Zetta', sans-serif;
         span {
             width: 5px;
@@ -91,15 +90,16 @@ nav {
             width: 150px;height:60px;
         }
     }
+    a:hover {
+        color: rgb(255, 255, 255);
+    }
 }
 
-li {
-    
-}
+
 
 .nav-link {
     display: inline-block;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
     text-transform: uppercase;
@@ -109,7 +109,7 @@ li {
         padding: 3px;
         color: black;
     }
-
+   
 
 }
 
@@ -157,14 +157,17 @@ footer {
 
 .carousel {
     clear: both;
-    img {
+    .img {
         transition: all 1s;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         -ms-transition: all 1s;
         -o-transition: all 1s;
-        max-width: 100%;
-        height: 700px;
+        max-width: 2000px;
+        min-height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
 }
 }
 
@@ -180,19 +183,14 @@ footer {
     margin: 0 auto;
     img {
         max-width: 100%;
-        // width: 400px;
         object-fit: scale-down;
         max-height:  450px;
-        //height: 100%;
         margin: 5px;
     }
 }
 
 .filter {
     width: 100%;
-    .filter-nav{
-        //padding: 4px;
-    }
     a {
         transition: 0.3s ease;
         background: #fff;
@@ -229,11 +227,8 @@ footer {
         }
     }
     .carousel {
-        img {
-            height: 400px;
-        }
         h4 {
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
     }
     .filter-gallery {
@@ -246,9 +241,11 @@ footer {
         width: 90%;
         position: absolute;
         z-index: 1;
-        top: 0%;
+        top: 4%;
         left: 5%;
+    
         .navbar-brand {
+
             img {
             width: 130px;height:50px;
             }
@@ -256,11 +253,11 @@ footer {
     
         li {
             padding: 0;
-            a {
+            .nav-link {
                 margin-left: 70px;
                 cursor: pointer;
             }
-        }
+                }
     }
     
 }

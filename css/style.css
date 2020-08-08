@@ -6,7 +6,7 @@
 html, body {
   padding: 0px;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .item {
@@ -92,9 +92,13 @@ nav .navbar-brand img {
   height: 60px;
 }
 
+nav a:hover {
+  color: white;
+}
+
 .nav-link {
   display: inline-block;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-family: 'Mulish', sans-serif;
   text-transform: uppercase;
@@ -153,14 +157,17 @@ footer a.nav-link .label {
   clear: both;
 }
 
-.carousel img {
+.carousel .img {
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
-  max-width: 100%;
-  height: 700px;
+  max-width: 2000px;
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .filter-gallery {
@@ -233,11 +240,8 @@ footer a.nav-link .label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .carousel img {
-    height: 400px;
-  }
   .carousel h4 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .filter-gallery {
     width: 95%;
@@ -249,7 +253,7 @@ footer a.nav-link .label {
     width: 90%;
     position: absolute;
     z-index: 1;
-    top: 0%;
+    top: 4%;
     left: 5%;
   }
   nav .navbar-brand img {
@@ -259,7 +263,7 @@ footer a.nav-link .label {
   nav li {
     padding: 0;
   }
-  nav li a {
+  nav li .nav-link {
     margin-left: 70px;
     cursor: pointer;
   }
