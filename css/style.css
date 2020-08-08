@@ -167,6 +167,7 @@ footer a.nav-link .label {
   min-height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000;
   background-position: center center;
 }
 
