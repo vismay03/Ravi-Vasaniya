@@ -23,6 +23,14 @@
   color: #2F3650;
 }
 
+.about div {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.6%, #e3ecee), color-stop(94.61%, #F1FAFD), color-stop(94.61%, #F1F7F9));
+  background: linear-gradient(180deg, #e3ecee 2.6%, #F1FAFD 94.61%, #F1F7F9 94.61%);
+  width: 400px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
 .nav-link.contact::after, .nav-link.contact::after {
   content: " ";
   height: 0;
@@ -81,8 +89,17 @@ footer a.nav-link .label {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  section img {
+    width: 400px;
+  }
   .contact {
     width: 83.03px;
+  }
+  .about div {
+    background: #fff;
+    width: 350px;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
 }
 /*# sourceMappingURL=about.css.map */
