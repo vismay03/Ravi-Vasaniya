@@ -1,10 +1,3 @@
-
-
-
-li {
-    margin-bottom: 10px;
-}
-
 /* menu */
 .bar {
     width: 18px;
@@ -14,21 +7,41 @@ li {
 }
 
 .navbar{
-    box-shadow: 0 0 0 ;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.12);;
 }
 
 .nav-link {
     display: inline-block;
     color: #000;
     text-decoration: none;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Hind', sans-serif;
     text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color:#2F3650;
+}
+
+.nav-link.contact::after, .nav-link.contact::after {
+    content: " ";
+    height: 0;
+    width: 0;
+}
+.contact {
+    border-radius: 10px;
+    background-color: #2F3650;
+    color: #fff;
+}
+
+.contact:hover {
+    background-color: #000000;
+    color: #fff;
 }
 
 a.nav-link .label {
     position: absolute;
-    top: -6px;
-    left: 87px;
+    top: 0px;
+    left: 82px;
 }
 
 footer {

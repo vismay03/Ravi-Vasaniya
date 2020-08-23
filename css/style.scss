@@ -57,7 +57,8 @@ html, body {
     
     .desc {
     width: 80%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
     margin: 0 auto;
     color: rgb(94, 32, 32);
     
@@ -99,10 +100,10 @@ nav {
 
 
 .nav-link {
-    display: inline-block;
+    display: flex;
     color: #fff;
     text-decoration: none;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Hind', sans-serif;
     text-transform: uppercase;
     a::after{
         content: 'new';
@@ -114,8 +115,9 @@ nav {
 
 a.nav-link .label {
     position: absolute;
-    top: -5px;
-    left: 80px;
+    top: 0;
+    align-self: center;
+    left: 70px;
 }
 
 .nav-link::after {
@@ -125,22 +127,6 @@ a.nav-link .label {
     height: 2px;
     background-color: rgb(249, 250, 245) ;
     transition: width .3s;
-}
-
-footer {
-    .nav-link::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: rgb(0, 0, 0) ;
-        transition: width .3s;
-    }
-    a.nav-link .label {
-        position: absolute;
-        top: -5px;
-        left: 87px;
-    }
 }
 
 .nav-link:hover::after {

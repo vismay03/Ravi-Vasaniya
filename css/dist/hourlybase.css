@@ -3,12 +3,11 @@
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
 }
 
 .navbar {
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 a.nav-link .label {
@@ -31,13 +30,13 @@ footer a.nav-link .label {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: #000;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .nav-link:hover {
@@ -63,25 +62,17 @@ footer a.nav-link .label {
 
 .nav-link:hover::after {
   width: 100%;
-  transition: width .3s;
-  -webkit-transition: width .3s;
-  -moz-transition: width .3s;
-  -ms-transition: width .3s;
-  -o-transition: width .3s;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
 }
 
 @media screen and (max-width: 500px) {
   footer .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
   }
 }
-/*# sourceMappingURL=hourlybase.css.map */

@@ -1,22 +1,21 @@
-li {
-    margin-bottom: 10px;
-}
+
 
 .nav-link {
     display: inline-block;
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Hind', sans-serif;
 }
 
 .navbar{
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.12);;
 }
 
 a.nav-link .label {
     position: absolute;
-    top: -5px;
-    left: 87px;
+    top: 0;
+    left: 83px;
 }
 
 .bar {
@@ -43,6 +42,28 @@ footer {
     -webkit-transition: width .3s;
     transition: width .3s;
 }
+
+.nav-link:hover {
+    color:#2F3650;
+}
+
+
+.nav-link.contact::after, .nav-link.contact::after {
+    content: " ";
+    height: 0;
+    width: 0;
+}
+.contact {
+    border-radius: 10px;
+    background-color: #2F3650;
+    color: #fff;
+}
+
+.contact:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
 
 .nav-link:hover::after {
     width: 100%;

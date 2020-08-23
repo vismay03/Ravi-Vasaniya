@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Open+Sans&family=Roboto+Condensed&family=Squada+One&display=swap" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -36,13 +38,13 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light white py-3 animated fadeInDown delay-1s">
+    <nav class="navbar navbar-expand-lg transparent white py-2 animated fadeInDown delay-1s">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand"  href="index.html">
+        <a class="navbar-brand py-3" href="index.html">
             <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
         </a>
-    
+        
         <!-- Collapse button -->
         <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="bar bar1"></div>
@@ -56,16 +58,16 @@
             <!-- Links -->
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link py-3 waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label small text-lowercase blue-gradient px-1 text-white">new</span></a>
+                <a class="nav-link py-3 waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label text-lowercase small blue-gradient px-1 text-white">new</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="about.html">About me</a>
+                <a class="nav-link py-3 waves-effect waves-light" href="about.html">About me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
+                <a class="nav-link pt-2 pb-1 contact my-2 waves-effect waves-light" style="background: #2F3650;color: #fff;"  href="contact.html">Contact</a>
             </li>
             </ul>
             <!-- Links -->
@@ -82,14 +84,17 @@
 
 
     <!--heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4 animated flipInY delay-2s" style="font-family: 'Lato', sans-serif;"  >Contact</h2>
-    <!--description-->
-    <p class="text-center w-responsive mx-auto mb-5 animated zoomIn delay-2s">Do you have any questions? Please do not hesitate to contact me directly.</p>
+    <div style="display: flex;justify-content: center; align-items:center; " >
+        <h3 class="text-center text-black animated flipInY delay-2s" style="margin: 2em 0;font-family: 'Squada One', cursive;">CONTACT
+        <p style="width: 50px;height: 4px;background: rgba(214, 203, 186, 0.3);margin:8px auto;"></p>
+        <p class="text-center w-responsive mx-auto mb-5 animated zoomIn delay-2s" style="opacity: .7;font-family: 'Open Sans', sans-serif;font-size: 14px;" >Do you have any questions? Please do not hesitate to contact me directly.</p>
+
+    </div><!--description-->
 
     <div class="row">
 
         <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5 animated zoomIn delay-1s">
+        <div class="col-md-9 mb-md-0 mb-5 animated zoomIn">
                 <form class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxVTwf1BOt8UvX0Xg6Ek1tPaIZjNGkUuGEanankuW7oOUBIF2vO/exec" method="POST">
 
                 <!--Grid row-->
@@ -156,7 +161,7 @@
                     </div>
                 </div>
                 <!--Grid row-->
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" style="margin-left: 0;">
                     Send</button>
 
                 <div style="display:none;" class="thankyou_message mt-5 bg-primary text-white p-3">
@@ -179,7 +184,7 @@
         <!--Grid column-->
         <div class="col-md-3 mt-4 text-center">
             <ul class="list-unstyled mb-0">
-                <li  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration='1000' ><i class="fa fa-map-marker fa-2x"></i>
+                <li  data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration='1000' ><i class="fa fa-map-marker fa-2x"></i>
                     <p>Morbi</p>
                 </li>
 
@@ -201,37 +206,16 @@
 <!-- Footer -->
 
 <!--Section: Contact v.2-->
-<footer class="mt-5" data-aos="zoom-in-left" data-aos-easing="linear" >
-    <section class="d-flex w-100 justify-content-around flex-wrap py-3">
-        <div class="mt-3" >
-            <img style="width: 140px; height: 40px;" src="images/Ravi-Vasaniya.png" />
-        </div>
-        <ul class="d-flex nav mt-3">
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="hourlybase.html">Hourly base<span class="label small text-lowercase blue-gradient px-1 text-white">new</span></a>
-            </li>   
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="about.html">About me</a>  
-            </li>
-            <li class="nav-item">
-                <a class="text-body nav-link waves-effect waves-light" href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <div class="d-flex mt-4">
-            <a style="color: black;" href="https://m.facebook.com/ravivasaniyaphotography"> <i class="fa fa-facebook mx-1" aria-hidden="true"></i></a>
-            <a style="color: black;" href="https://www.instagram.com/ravi_vasaniya_photography"><i class="fa fa-instagram mx-3" aria-hidden="true"></i></a>
-            <a style="color: black;" href="https://www.youtube.com/ravivasaniyaofficial">   <i class="fa fa-youtube-play mx-1" aria-hidden="true"></i></a>            
-        </div>
-
-    </section>
-
-    <p class="small d-flex justify-content-center pt-3" >
-        <span><i class="fa fa-copyright text-center" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved. </span>
-    </p>
-</footer>   
+<footer class="py-5" data-aos="zoom-in-left">
+    <div class ="w-100 d-flex justify-content-center">
+    <a style="color: black;" href="https://m.facebook.com/ravivasaniyaphotography"> <i class="fa fa-facebook mx-1" aria-hidden="true"></i></a>
+    <a style="color: black;" href="https://www.instagram.com/ravi_vasaniya_photography"><i class="fa fa-instagram mx-3" aria-hidden="true"></i></a>
+    <a style="color: black;" href="https://www.youtube.com/ravivasaniyaofficial">   <i class="fa fa-youtube mx-1" aria-hidden="true"></i></a>
+    </div>
+<p class="small w-100 d-flex justify-content-center" style="opacity: .6;font-family: 'Open Sans', sans-serif;font-size: 13px;">
+    <i class="fa fa-copyright text-center mt-1 mr-1" aria-hidden="true"></i> Copyright 2020 Ravi Vasaniya. All Rights Reserved.
+</p>
+</footer>
 <!-- <script>
 
 </script>  -->
