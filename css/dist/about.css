@@ -71,4 +71,8 @@ footer a.nav-link .label {
     flex-direction: row;
     justify-content: center;
   }
+
+  .contact {
+    width: 83.03px;
+  }
 }
